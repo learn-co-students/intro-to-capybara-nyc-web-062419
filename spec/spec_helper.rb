@@ -15,6 +15,8 @@ def app
   # Load the application defined in config.ru
   Rack::Builder.parse_file('config.ru').first
 end
+# require 'pry'
 
+# binding.pry
 # Configure Capybara to test against the application above.
 Capybara.app = app
